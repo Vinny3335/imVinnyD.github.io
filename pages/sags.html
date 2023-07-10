@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/portfolio.css">
+    <link rel="stylesheet" href="singlepages.css">
+    <title>SAGS</title>
+</head>
+<body style="background-color: rgba(33, 31, 39, 1);">
+    <nav>
+        <div class="nav-container">
+            <h1 class ="logo"><a href="/portfolio.html#home"><span class="firstLetter">V</span>inny <span class="firstLetter">D.</span></a></h1>
+            <img class="menu-cta" id="menu-button" src="/images/menu.svg" alt="menu button">
+            <div class="menu popup" id="menu">
+            <ul class="nav-lists">
+              <img class="menu-exit" id="exit-button" src="/images/exit.png" alt="">
+                <li><a class="nav-links" href="/portfolio.html#home"><span class="nav-span">home</span></a></li>
+                <li><a class="nav-links" href="/portfolio.html#experience"><span class="nav-span">expertise</span></a></li>
+                <li><a class="nav-links" href="/portfolio.html#work"><span class="nav-span">work</span></a></li>
+                <li><a class="nav-links" href="/portfolio.html#contact"><span class="nav-span">contact</span></a></li>
+                <p class="copyright">©2023.Made with passion, sweat and a bunch of energy drinks. All rights reserved</p>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="des">
+      <a href="/portfolio.html#work">
+      <div class="return">
+        <h4><-</h4>
+      </div>
+      <div class="nextpage">
+        <p>Next Project</p>
+        <a class="prev" href="invictus.html"><-</a>
+        <a class="next" href="pathfinder.html">-></a>
+        <span class="nextTitle">Pathfinder</span>
+      </div>
+    </a>
+      <div class="container">
+        <div class="row-md-12 headtitle">
+          <h6>Web-Dev</h6>
+          <h1>SAGS WEB AND MOBILE APP</h1>
+        </div>
+        
+        <div class="row-md-12 sub">
+          <h6>Home> Portfolio> SAGS</h6>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h6 class="pagedescription">
+              SAGS(School Attendance and Grading System) is a system developed for the Johannesburg Secondary School.
+              SAGS was created to reduce work load on admins, allow for parents to be more involved in their child's education and feasible way for students and teachers to communicate. 
+            </h6>
+          </div>
+
+          <div class="col-md-6">
+            <div class="infos">
+              <div class="infocard">
+                <h6><span>Client</span></h6>
+                <h6>Johannesburg Secondary School</h6>
+              </div>
+
+              <div class="infocard">
+                <h6><span>Technologies</span></h6>
+                <h6>Asp.Net MVC</h6>
+                <h6>Xamerin Maui</h6>
+                <h6>Postman API</h6>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     
+    </section>
+
+    <section class="imagesection">
+    <div class="container">
+      <div class="row-md-12">
+        <img class="pageimages" src="/images/SAGS/p1.png" alt="">
+      </div>
+      <div class="row-md-12">
+        <img class="pageimages" src="/images/SAGS/p2.png" alt="">
+      </div>
+      <div class="row-md-12">
+        <img class="pageimages" src="/images/SAGS/p3.png" alt="">
+      </div>
+      <div class="row-md-12">
+        <img class="pageimages" src="/images/SAGS/p4.png" alt="">
+      </div>
+    </div>
+  </section>
+
+   
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+
+
+    <script>
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create
+  ({
+    trigger:".body",
+    start: "top top",
+    
+    //markers:true,
+    toggleClass: {targets: ".nav-container", className: "nav-active"},
+
+  });
+
+  const menuButton = document.getElementById('menu-button');
+const menuExit = document.getElementById('exit-button');
+const menu = document.querySelector('.popup');
+const navLinks = document.querySelectorAll('.nav-links');
+
+menuButton.addEventListener('click', () =>{
+  menu.classList.toggle('active');
+});
+
+menuExit.addEventListener('click', () =>{
+  menu.classList.remove('active');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+});
+
+    </script>
+</body>
+</html>

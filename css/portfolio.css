@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Titillium+Web&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: linear-gradient(to bottom,rgb(32, 32, 40) 100%, #202028fe 100% );
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.intro-container
+{
+    height: 100vh;
+    background: linear-gradient(rgba(33, 31, 39, 0.216), #211f2737), url('/images/webBG/webBG.jpg');
+    background-size: cover;
+    background-position-y: top center;
+    background-repeat: repeat;
+    margin-top: -30px;
+    
+}
+
+.hero
+{
+    padding-top: 130px;
+}
+
+.logo
+{
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(#C9AD7F, #A67C5B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 1.5em;
+   
+    
+}
+
+.logo:hover
+{
+    text-decoration: underline;
+}
+
+.nav-container
+{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    z-index: 999;
+}
+
+.nav-active
+{
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 31, 39, 0.73); /* Adjust the last value (0.5) to control the transparency */
+}
+
+
+ul, li
+{
+    display: inline;
+    
+}
+
+.nav-lists
+{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50%;
+    flex: 1;
+    font-size: 1.3em;
+    padding-top: 0.5em;
+    margin-right: 1.5em;
+}
+
+.landing-intro
+{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    
+}
+
+.circle
+{
+    background-color: orange;
+    box-shadow:inset 0 0 30px 0 #fff, inset 20px 0 30px #ffd400, inset -20px 0 30px red, inset 20px 0 300px #ff40d6, inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00, 10px 0 80px #f55;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 54.5%;
+    margin-top: 2.5%;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out;
+    animation: lightup 1s ease-in;
+}
+
+.circle:hover
+{
+    box-shadow:inset 0 0 30px 0 #fff, inset 20px 0 30px #ffb300, inset -20px 0 30px rgb(252, 134, 0), inset 20px 0 300px #ff40d6, inset -20px 0 300px #e3ff4b, 0 0 100px #fff, -10px 0 120px #fbff00, 10px 0 120px #f55;
+}
+
+.experience
+{
+    /* margin-top: 0px; */
+    color: white;
+    opacity: 0;
+    padding: 1em;
+}
+.nav-links{
+    text-decoration: none;
+    color: #C9AD7F;
+}
+
+.nav-span
+{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-span::before
+{
+    position: absolute;
+    z-index: -1;
+    height: -.4em;
+    content: ' ';
+    background-color: white;
+    bottom: 0;
+    margin-left: 0;
+    width: .6em;
+    height: .1em;
+    opacity: .7;
+    transition: width 300ms;
+}
+
+#vinny
+{
+    margin-top: 30px;
+}
+
+.nav-span:hover
+{
+    color: white;
+}
+
+.nav-span:hover::before
+{
+    width: 4.5rem;
+    cursor: pointer ;
+    background-color: #e2be83;
+}
+.landing-description
+{
+    color: #C9AD7F;
+    font-size: 1.6em;
+    animation: fadein 0.3s ease-in;
+}
+
+.my-name
+{
+    color: #C9AD7F;
+    font-size: 6em;
+}
+
+.span-white
+{
+    color: white;
+    font-size: 2rem;
+}
+
+.landing-intro p
+{
+    color: #C9AD7F;
+    font-size: 1.5em;
+}
+
+.svg-animation
+{
+    position: absolute;
+    left: 46vw;
+    bottom:10px;
+   animation:fadein 1s ease-in;
+   top:90vh;
+    
+}
+
+.firstLetter
+{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#C9AD7F, #A67C5B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.animate-box
+{
+    opacity: 0;
+}
+
+.progress-wrap h3 
+{
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 10px; 
+}
+
+.progress 
+{
+    height: 60px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #f2f3f7;
+    overflow: visible; 
+}
+
+.progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #2c98f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+
+    .progress-bar span {
+        position: absolute;
+        top: -22px;
+        right: 0; }
+      .progress-bar.color-1 {
+        background: #2c98f0; }
+
+        .progress-bar.color-1:after {
+            background: #2c98f0; }
+          .progress-bar.color-1 span {
+            color: #2c98f0; }
+        .progress-bar.color-2 {
+          background: #ec5453; }
+@keyframes lightup {
+    from{
+        box-shadow: none;
+    }
+
+    to
+    {
+        box-shadow:inset 0 0 30px 0 #fff, inset 20px 0 30px #ffd400, inset -20px 0 30px red, inset 20px 0 300px #ff40d6, inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00, 10px 0 80px #f55;
+        
+    }
+}
+
+@keyframes fadein
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

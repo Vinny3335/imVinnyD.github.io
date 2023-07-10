@@ -1,0 +1,248 @@
+
+.des
+{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    margin-top: 6em;
+    padding: 0;
+  
+}
+
+.return
+{
+    background-color: rgb(48, 45, 56);
+    margin-left: 1em;
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: 1px solid white;
+    transition: .2s ease-in-out;
+}
+
+.nextpage
+{
+    width: 15vw;
+    height: 18vh;
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(48, 45, 56);
+    border: 2.5px solid #C9AD7F;
+    border-radius: 10px;
+    padding: .6em;
+    
+}
+
+.nextpage p
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: .8em;
+    margin-bottom: .6em;
+}
+
+.nextTitle
+{
+    display: block;
+    text-align: center;
+    margin-top: .8em;
+    color: white;
+    font-size: 1.2em;
+}
+
+.nextpage a
+{
+    text-decoration: none;
+    color: #C9AD7F;
+    font-size: 1.4em;
+    
+}
+
+
+.nextpage .next
+{
+    position: absolute;
+    right: 6px;
+    
+}
+
+.nextpage .next:hover
+{
+    color: white;
+    
+}
+
+.nextpage .prev:hover
+{
+   color: white;
+}
+
+.return:hover
+{
+    border:4px solid white;
+    height: 3.5em;
+    width: 3.6em;
+}
+
+.return h4
+{
+    color: white;
+}
+
+.sub
+{
+    margin-top: 3em;
+}
+
+.des h1 {
+    font-size: 5em;
+  color: white;
+}
+
+.des h6
+{
+    color: rgb(140, 140, 140);
+}
+
+.container
+{
+    margin-top: 3em;
+}
+
+.headtitle
+{
+    width: 30%;
+    animation: fade .4s ease-in;
+}
+
+.pagedescription
+{
+    margin-top: 4em;
+}
+
+.infos
+{
+    margin-top: 4em;
+    display: flex;
+}
+
+.infocard
+{
+    width: 20%;
+    border-top: 1px solid gray;
+    padding: .3em;
+    margin-left: 1.5em;
+}
+
+.infocard span
+{
+    color: white;
+}
+
+.infocard h6
+{
+    margin-top: 1em;
+}
+
+.pageimages
+{
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 2em;
+}
+
+
+.image-section
+{
+    background-color: blue;
+    height: 100%;
+}
+
+
+@media (min-width: 300px) and (max-width: 768px){
+.popup.active
+    {
+        display: block;
+        background-color: rgba(33, 31, 39, 1);
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        width: 66%;
+        padding: 1em;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .copyright
+    {
+        display: block;
+        color: white;
+        font-size: 0.5em;
+        text-align: right;
+    }
+
+    .popup .nav-lists
+    {
+        display: block;
+        margin-top: 1em;
+        height: 50vh;
+    }
+
+    .popup .nav-lists li
+    {
+        /* display: block; */
+        text-align: right;
+        margin-top: 2em;
+        padding: .5em;
+    }
+
+    .popup img
+    {
+        display: block;
+        float: right;
+        right: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    .nextpage p
+    {
+        display: none;
+    }
+
+    .nextpage span
+    {
+        display: none;
+    }
+
+    .nextpage .next
+    {
+        display: block;
+        position: absolute;
+        bottom: 7px;
+    }
+}
+
+@keyframes fade
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
