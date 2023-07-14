@@ -58,7 +58,7 @@ table {
 .intro-container
 {
     height: 100vh;
-    background: linear-gradient(rgba(33, 31, 39, 0.216), #211f2737), url('/images/webBG.jpg');
+    background: linear-gradient(rgba(33, 31, 39, 0.216), #211f2737), url('./images/webBG.jpg');
     background-size: cover;
     background-position-y: top center;
     background-repeat: repeat;
