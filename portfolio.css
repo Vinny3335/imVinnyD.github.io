@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background: linear-gradient(to bottom,rgb(32, 32, 40) 100%, #202028fe 100% );
-    overflow-x: hidden;
+    overflow-x:hidden !important;
     font-family: 'Titillium Web', sans-serif;
 }
 ol, ul {
@@ -353,7 +353,7 @@ ul, li
 
 .p2
 {
-   transform: translateX(1000px);
+   transform: translateX(1000%);
    
 }
 
@@ -864,6 +864,111 @@ ul, li
     
   }
 
+  @media (min-width: 250px) and (max-width: 450px)
+  {
+    
+    .logo
+    {
+        margin-left: 0;
+        font-size: 1em;
+        margin-top: 0.2em;
+    }
+
+    .nav-container
+    {
+        max-width: 414px;
+        display: flex;
+        justify-content: space-between;
+  
+    }
+
+    .popup.active
+    {
+        right: 0em;
+        float: right;
+        position: absolute;
+    }
+
+    .intro-container
+    {
+        max-width: 414px;
+        max-height: 100vh;
+        margin-top: -0.5em;
+    }
+
+    .experience
+    {
+        max-width: 414px;
+       font-size: 1em;
+       padding-left: .5em;
+        margin-top: 10em;
+    }
+
+    .svg-animation
+    {
+        transform: translateY(50px) translateX(-35px);
+    }
+
+    .intro-container h2
+    {
+        font-size: 2.5em;
+        margin-top: 1em;
+    }
+
+    .landing-description
+    {
+        margin-top: -1em;
+    }
+
+    .intro-container .my-name
+    {
+        margin-top: 1em;
+    }
+    .sphereClass
+    {
+        transform: translateX(-90px);
+    }
+
+    .skill
+    {
+        max-width: 350px;
+        
+    }
+
+    .headers
+    {
+        font-size: 5em;
+        text-align: center;
+    }
+
+    .menu-cta
+    {
+        position: absolute;
+        right: 2.2em;
+    }
+
+    .body
+    {
+        overflow-y: none;
+        max-width: 414px;
+        display: block;
+    }
+
+    .work
+    {
+        max-width: 400px;
+    }
+
+    .contact
+    {
+        max-width: 400px;
+    }
+
+    .contactCard
+    {
+        max-width: 400px;
+    }
+  }
   
 
 
