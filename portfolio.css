@@ -866,6 +866,11 @@ ul, li
 
   @media (min-width: 250px) and (max-width: 450px)
   {
+
+    .body{
+        
+        overflow-y: hidden;
+    }
     
     .logo
     {
@@ -968,7 +973,7 @@ ul, li
     {
         transform: translateX(-20px);
         align-content: start;
-        max-width: 399px;
+        max-width: 400px;
     }
 
     
