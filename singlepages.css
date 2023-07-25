@@ -232,6 +232,14 @@
     }
 }
 
+@media (min-width: 250px) and (max-width: 450px)
+{
+    .headtitle h1
+    {
+        font-size: 4em;
+    }
+}
+
 @keyframes fade
 {
     from

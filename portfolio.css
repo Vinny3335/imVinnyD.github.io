@@ -961,10 +961,18 @@ ul, li
 
     .contact
     {
-        max-width: 450px;
+        max-width: 400px;
     }
 
-   
+    .contactCard
+    {
+        transform: translateX(-20px);
+        align-content: start;
+        max-width: 399px;
+    }
+
+    
+
   }
   
 
