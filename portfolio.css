@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background: linear-gradient(to bottom,rgb(32, 32, 40) 100%, #202028fe 100% );
-    overflow-x:hidden !important;
+    overflow-x:hidden;
     font-family: 'Titillium Web', sans-serif;
 }
 ol, ul {
@@ -869,6 +869,7 @@ ul, li
 
     .body{
         
+        overflow-x: hidden;
         overflow-y: hidden;
     }
     
@@ -954,6 +955,7 @@ ul, li
 
     .body
     {
+        overflow-x: none;
         overflow-y: none;
         max-width: 414px;
         display: block;
