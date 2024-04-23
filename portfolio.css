@@ -322,13 +322,41 @@ ul, li
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.udemy-container
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.work-deets
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.work-info
+{
+    background-color: #353b48;
+}
+
+.work-info p
+{
+    color: white;
+}
+
+.indeets
+{
+    text-align: start;
+}
 
 .img-fluid {
-    max-width: 100%;
+    width: 50%;
     height: auto;
   }
 
-  .workP
+.workP
   {
     opacity: 1;
     color: white;
@@ -412,18 +440,18 @@ ul, li
 }
 .react
 {
-    width: 20%;
+    width: 40%;
     animation: react 4s;
 }
 .nodejs
 {
-    width: 30%;
+    width: 40%;
     animation: nodejs 4s;
 }
 
 .figma
 {
-    width: 70%;
+    width: 50%;
     animation: figma 4s;
 }
 

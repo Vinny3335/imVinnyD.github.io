@@ -64,7 +64,7 @@ gsap.to(".work", {
   opacity:1,
   scrollTrigger: {
       trigger:".img-fluid",
-      start:"bottom 30%",
+      start:"bottom 63%",
       scrub:3, //stops animation when scrolling stops(true or 2 seconds of smoothing)
       //markers: true,
       toggleActions:"restart complete reverse none",
@@ -292,11 +292,11 @@ workLink.addEventListener('click', function (event) {
 
 //The 3d ball thingie
 const myTags = [
-  ' PYTHON', 'JAVA', 'MongoDB',
-  'EXPRESS', 'C++', 'C#',
+  ' PYTHON', 'JAVA', 'EC2',
+  'DYNAMODB', 'C++', 'C#',
   'BOOTSTRAP', 'BULMA', 'GIT',
   'MYSQL', 'ASP.NET', 'MVC',
-  'MAUI','AZURE', 'NODEJS',
+  'S3','LAMBDA', 'CONNECT',
 ];
 
 var tagCloud = TagCloud('.content', myTags,{
