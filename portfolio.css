@@ -915,11 +915,12 @@ ul, li
         display: flex;
         flex-direction: column;
         height: auto;
+        max-width: 100vw;
     }
 
     .img-fluid
     {
-        position: absolute;
+        position: block;
        right: -2em;
     }
 
