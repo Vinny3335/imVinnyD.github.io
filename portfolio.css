@@ -937,6 +937,11 @@ ul, li
         justify-content: space-between;
   
     }
+    
+    .vinnyImg
+    {
+        height: 100%;
+    }
 
     .popup.active
     {
@@ -1018,14 +1023,15 @@ ul, li
 
     .contact
     {
-        max-width: 400px;
+        max-width: 100vw;
+        height: 140vh;
     }
 
     .contactCard
     {
         transform: translateX(-20px);
         align-content: start;
-        max-width: 400px;
+        max-width: 450px;
     }
 
     
