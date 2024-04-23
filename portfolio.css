@@ -912,7 +912,6 @@ ul, li
 
     .udemy-container
     {
-        background-color: red;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -920,9 +919,8 @@ ul, li
 
     .img-fluid
     {
-        display: block;
         position: absolute;
-       
+       right: -2em;
     }
 
     .nav-container
