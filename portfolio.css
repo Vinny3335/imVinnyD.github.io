@@ -915,7 +915,7 @@ ul, li
         background-color: red;
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 600px;
     }
 
     .nav-container
