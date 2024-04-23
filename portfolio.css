@@ -914,7 +914,9 @@ ul, li
     {
         background-color: red;
         display: flex;
-        flex-direction: column;    }
+        flex-direction: column;
+        height: auto;
+    }
 
     .nav-container
     {
