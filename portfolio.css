@@ -921,7 +921,8 @@ ul, li
     .img-fluid
     {
         display: block;
-        height: 40%;
+        position: absolute;
+       
     }
 
     .nav-container
