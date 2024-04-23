@@ -915,7 +915,12 @@ ul, li
         background-color: red;
         display: flex;
         flex-direction: column;
-        height: 600px;
+        height: auto;
+    }
+
+    .img-fluid
+    {
+        display: block;
     }
 
     .nav-container
