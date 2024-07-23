@@ -403,6 +403,7 @@ ul, li
     /* text-align: center; */
 }
 
+
 .bar
 {
     background: #353b48;
@@ -926,9 +927,8 @@ ul, li
         max-height: 50%;
         left: -14em;
         top: 17em;
+        display: none;
     }
-
-    
 
     .nav-container
     {
