@@ -57,7 +57,7 @@ table {
 
 .intro-container
 {
-    height: 100vh;
+    height: 105vh;
     background: linear-gradient(rgba(33, 31, 39, 0.216), #211f2737), url('./images/webBG.jpg');
     background-size: cover;
     background-position-y: top center;
@@ -322,7 +322,35 @@ ul, li
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+#badge-id
+{
+    width: 85%;
+    display: block;
+}
 
+.badge-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.badge-container:hover .badge-overlay {
+    opacity: 1;
+}
 
 .udemy-container
 {
@@ -683,14 +711,30 @@ ul, li
         cursor: pointer;
     }
 
- 
-
     .mobile-hide
     {
      visibility: hidden;
      height: 0;
      width: 0;
      transform: translateY(-500px);
+    }
+
+    #badge-id, .badge-overlay
+    {
+        width: 100%;
+        display: block;
+    }
+
+    .udemy-container
+    {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .img-fluid
+    {
+        width: 90vw;
+        height: 20vh;
     }
    }
 

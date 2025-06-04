@@ -292,11 +292,11 @@ workLink.addEventListener('click', function (event) {
 
 //The 3d ball thingie
 const myTags = [
-  ' PYTHON', 'JAVA', 'EC2',
-  'DYNAMODB', 'C++', 'C#',
-  'BOOTSTRAP', 'BULMA', 'GIT',
-  'MYSQL', 'ASP.NET', 'MVC',
-  'S3','LAMBDA', 'CONNECT',
+  ' PYTHON', 'JAVA', 'RDS',
+  'DYNAMODB', 'C++', 'JAVASCRIPT',
+  'BOOTSTRAP', 'JENKINS', 'GIT',
+  'MYSQL', 'ASP.NET', 'BITBUCKET',
+  'S3','LAMBDA', 'AWS CONNECT',
 ];
 
 var tagCloud = TagCloud('.content', myTags,{
